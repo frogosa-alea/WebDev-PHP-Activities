@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+/* reset default settings*/
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}    
+/* Style the header */
+header {
+  background-color: #77BFA3;
+  padding: 15px;
+  color: white;
+  overflow: hidden;
+}
+  
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  background: #98C9A3;
+  padding: 20px;
+  flex: 1; /* side by side nav and content to have same height*/
+}
+  
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+  
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+}
+
+section{
+  display: flex; /* side by side nav and content to have same height*/
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+  
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* header icon styling*/
+.icon{
+  float: left;
+  box-shadow: 0px 6px 10px black;
+  border: 1px ;
+  border-radius: 50%;
+}
+
+.header-info{
+  font-size: 15px;
+  color: white;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+header .header-info tr td{
+  width: fit-content;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.display-lab-one{
+  color: #77BFA3;
+  font-size: 50px;
+  padding-top: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.display-lab-two{
+
+    padding-top: 2m;
+    font-size: 20px;
+}
+body {
+  text-align: center;
+}
+form {
+  display: inline-block;
+}
+
+td{
+  text-align: left;
+  padding-right: 2em;
+}
+
+#form1{
+  margin: 0.5em 0 0.5em 0;
+}
+
+.form-buttons{
+  padding-top: 2em;
+  text-align: center;
+}
+
+.btn-outline-success:first-child{
+  margin-right: 1em;
+}
